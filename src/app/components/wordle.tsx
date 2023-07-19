@@ -7,7 +7,6 @@ export const Wordle = () => {
   const title = ["©Snowchild", "Wordle"];
   const wordArray = ["DREAM"];
   const [FIRST, setFIRST] = useState(["", "", "", "", ""]);
-  const [SECOND, setSECOND] = useState(["", "", "", "", ""]);
 
   const handleClick = (item: string) => {
     FIRST[0] === ""
@@ -32,7 +31,7 @@ export const Wordle = () => {
       <div className="flex flex-row gap-x-1">
         {FIRST.map((item, key) => (
           <span
-            className="border-4 border-slate-800 w-12 h-12 flex justify-center items-center text-2xl text-white"
+            className="border-4 border-slate-800 w-14 h-14 flex justify-center items-center text-2xl text-white"
             key={key}
           >
             {item}
